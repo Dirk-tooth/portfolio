@@ -1,0 +1,51 @@
+.container {
+  margin-top: 8rem;
+}
+
+.techBanner {
+  position: absolute;
+  top: 6.5rem;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: bannermove 20s linear infinite;
+  transform: translate3d(0, 0, 0);
+  /* height: 300px; */
+}
+
+.content {
+  padding: 2rem 4rem;
+}
+
+.content p {
+  padding: 2rem 0;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+    color: blue;
+  }
+  25% {
+    transform: translateX(-12.5);
+    color: purple;
+  }
+  50% {
+    transform: translateX(-25%);
+    color: orange;
+  }
+  75% {
+    transform: translateX(-32.5);
+    color: red;
+  }
+  100% {
+    transform: translateX(-50%);
+    color: blue;
+  }
+  /* 0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } */
+}
